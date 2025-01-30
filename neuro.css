@@ -1,0 +1,279 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    background: linear-gradient(to right, WHITE, #69b0d6);
+
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #154a66;
+    padding: 15px 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+.navbar a:hover {
+    width: 100px;
+    height: 50px;
+    background-color:WHITE ;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+
+.logo {
+    height: 80px;
+}
+
+
+.header {
+    background-image:url(Content/3_enhanced.jpg);
+    background-color: rgb(171, 140, 120);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: rgb(233, 218, 213) ;
+    text-shadow: 2px 2px 4px  black;
+    font-size: 3rem;
+    text-align: center;
+    padding: 0 20px;
+    border-radius: 40px
+}
+
+
+.paragraph p{
+    margin:20px 0;
+}
+
+
+.home_body{
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.home_body_2{
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.home_body_3{
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto;
+    
+    grid-template-areas:
+    "section_1 section_2";
+    
+    gap: 10px;
+    height: 10vh;
+
+    justify-content: center;
+    align-items: center;
+
+}
+   
+.section_1{
+   grid-area: section_1;
+   padding: 20px;
+   text-align: center;
+
+   mix-blend-mode: multiply;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section_2{
+   grid-area: section_2;
+   padding: 20px;
+   text-align: center;
+
+   mix-blend-mode: multiply;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+
+.upload-container {
+    /* background-color: #6C49F4; */
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed white;
+    width: 180%;
+    color: black;
+    font-family: Arial, sans-serif;
+}
+.upload-container h2 {
+    margin-bottom: 15px;
+}
+.upload-container input {
+    display: none;
+}
+.upload-label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: #5E3BEE;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.privacy-badge {
+    background: white;
+    color: #5E3BEE;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+section {
+    padding: 60px 20px;
+    margin-top: 60px;
+    min-height: 100vh;
+}
+
+
+h2 {
+    margin-top: 0;
+}
+
+
+.contact p {
+    margin: 5px 0;
+}
+
+
+.container_5{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    
+    grid-template-areas:
+    "phone email"
+    "social app";
+    
+    gap: 10px;
+    height: 10vh;
+}
+   
+
+.email{
+   grid-area: email;
+   padding: 20px;
+   text-align: center;
+}
+
+.email p{
+    color:rgb(57, 57, 57);
+}
+
+
+.phone{
+   grid-area: phone;
+   padding: 20px;
+   text-align: center;
+}
+
+.phone p{
+    color:rgba(109,124,128,255);
+}
+
+.social{
+   grid-area: social;
+   padding: 20px;
+   text-align: center;
+}
+
+.app{
+   grid-area: app;
+   padding: 20px;
+   text-align: center;
+
+}
+
+
+a[href="https://www.facebook.com/login/"]
+{
+    color:rgba(109,124,128,255);
+    text-decoration:none;
+}
+
+
+a[href="https://x.com/i/flow/login"]
+{
+    color:rgba(109,124,128,255);
+    text-decoration:none;
+}
+
+
+a[href="https://www.instagram.com/accounts/login/"]
+{
+    color:rgba(109,124,128,255);
+    text-decoration:none;
+}
+
+
+a[href="https://in.pinterest.com/login/"]
+{
+    color:rgba(109,124,128,255);
+    text-decoration:none;
+}
+
+
+a[href="https://play.google.com/store/apps?hl=es_419"]
+{
+    color:rgb(57, 57, 57);
+    text-decoration:none;
+}
+
+
+a[href="https://www.apple.com/in/app-store/"]
+{
+    color:rgb(57, 57, 57);
+    text-decoration:none;
+}
+
+
+a:hover{
+    color: blue;
+}
