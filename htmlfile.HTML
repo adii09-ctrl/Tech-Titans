@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Sets character encoding to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsive design -->
+    <title>Neuro Scan</title> <!-- Title of the webpage -->
+    <link rel="stylesheet" href="neuro.css"> <!-- Links to external CSS for styling -->
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <img src="templates/logo_10.jpg" class="logo"> <!-- Logo image -->
+        <a href="#home">Home</a> <!-- Link to home section -->
+        <a href="#portfolio">Resume</a> <!-- Link to resume section -->
+        <a href="#section">Account</a> <!-- Link to account section -->
+        <a href="#contact">Contact</a> <!-- Link to contact section -->
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="header">
+            <h1>Welcome to Neuro Scanner</h1> <!-- Main heading -->
+            <p>AI Generated Resume Scanner</p> <!-- Subheading -->
+        </div>
+        
+        <div class="home_body">
+            <br><br><br>
+            <div class="main">
+                <h1><u>"Rank Your Resume, Land More Interviews! 🚀"</u></h1> <!-- Motivational quote -->
+                <h4>Our tool analyzes and ranks your resume, ensuring it highlights the key skills and experience recruiters look for. <br>
+                    Optimize your resume and boost your job prospects today!</h4> <!-- Description of the tool -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="portfolio">
+            <h2><u>Features</u></h2> <!-- Features heading -->
+            <br><br>
+        </div>
+
+        <div class="container">
+            <div class="section_1">
+                <img src="templates/mark.png" height="100" width="100"> <!-- Feature image -->
+                <h2>Resume Checker</h2> <!-- Feature title -->
+                <p>Get immediate exposure with your first upload. Our Pulse algorithm surfaces new photographs and photographers, ensuring your photos are seen by the community so you receive valuable feedback on day one.</p> <!-- Feature description -->
+            </div>
+    
+            <div class="section_2">
+                <img src="templates/pngtree.png" height="100" width="100"> <!-- Feature image -->
+                <h2>Resume Ranker</h2> <!-- Feature title -->
+                <p>Market yourself as a professional photographer. Show that you are available for hire on your Profile and get discovered in Search results, showcase your articles, presents, videos, and more with Resources, and create a Portfolio website to showcase your work.</p> <!-- Feature description -->
+            </div>
+
+            <div class="upload-container">
+                <div class="privacy-badge">🔒 100% privacy</div> <!-- Privacy badge -->
+                <form id="resumeForm">
+                    <h2>Drop your resume here or 
+                        <br><br>
+                        <label for="file-upload" class="upload-label" onclick="uploadResume()">choose a file.</label> <!-- File upload label -->
+                    </h2>
+                    <p>English resumes in PDF or DOCX only. Max 2MB file size.</p> <!-- File upload instructions -->
+                    <input type="file" id="file-upload" accept=".pdf,.docx"> <!-- File input -->
+                    
+                    <!-- New fields for candidate information -->
+                    <div class="candidate">
+                        <table>
+                            <input type="text" id="candidateName" placeholder="Your Name" required> <!-- Candidate name input -->
+                            <input type="email" id="candidateEmail" placeholder="Your Email" required> <!-- Candidate email input -->
+                            <input type="tel" id="candidatePhone" placeholder="Your Phone" required> <!-- Candidate phone input -->
+                            <input type="text" id="jobPosition" placeholder="Job Position" required> <!-- Job position input -->
+                            <textarea id="jobDescription" placeholder="Job Description" required></textarea> <!-- Job description input -->
+                            
+                            <button type="submit" onsubmit="uploadResume()">Upload Resume</button> <!-- Submit button -->
+                        </table>
+                    </div>
+                    
+                    <div id="rankingOutput"></div> <!-- Output for ranking results -->
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sign Up Section -->
+    <section id="section">
+        <div class="sign_up">
+            <h2>Join Our Community! 🚀</h2> <!-- Sign up heading -->
+            <p>Connect with job seekers, recruiters, and career experts to optimize your resume with our ranked AI-Resume Scanner.<br></p> <!-- Description -->
+            <div class="button-container">
+                <a href="_signup.html"><button class="signup-button" class="active">Sign up</button></a> <!-- Sign up button -->
+            </div>        
+        </div>
+
+    <!-- Contact Section -->
+    <div class="home_body_3">
+        <div class="portfolio">
+            <h2><u>Contact & Help</u></h2> <!-- Contact heading -->
+            <br><br>
+        </div>
+
+        <section id="contact">
+            <div class="container_5">
+                <div class="phone">
+                    <h1>Contact us</h1>
+                    <p> +91 xxxxxxxxxx</p> <!-- Phone number -->
+                </div>
+
+                <div class="email">
+                    <h1>Email</h1>
+                    <p>abp@gmail.com</p> <!-- Email address -->
+                    <p>abc@gmail.com</p> <!-- Email address -->
+                </div>
+
+                <div class="social">
+                    <h2>Social Media</h2>
+                    <nav>
+                        <h1><a href="https://www.facebook.com/login/">Facebook</a></h1> <!-- Facebook link -->
+                        <h1><a href="https://x.com/i/flow/login">X</a></h1> <!-- X link -->
+                        <h1><a href="https://www.instagram.com/accounts/login/">Instagram</a></h1> <!-- Instagram link -->
+                    </nav>
+                </div>
+
+                <div class="app">
+                    <h2>ATS Resume</h2>
+                    <nav>
+                        <h1><a href="https://play.google.com/store/apps?hl=es_419">What is An ATS?</a></h1> <!-- ATS link -->
+                        <h1><a href="https://www.canva.com/resumes/templates/">Resume Templates</a></h1> <!-- Resume templates link -->
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <div id="loadingSpinner" style="display:none;">Loading...</div> <!-- Loading spinner -->
+        <script src="script.js"></script> <!-- External JavaScript file -->
+        <script>
+            console.log("Inline script loaded!"); // Log message for inline script
+        </script>
+</body>
+</html>

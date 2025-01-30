@@ -1,0 +1,233 @@
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Sets the font for the body */
+    margin: 0; /* Removes default margin */
+    background-color: #f0f0f0; /* Sets a light gray background color */
+    color: #333; /* Sets the text color */
+    background: linear-gradient(to right, WHITE, #69b0d6); /* Applies a linear gradient background */
+}
+
+.navbar {
+    display: flex; /* Uses flexbox for layout */
+    justify-content: space-between; /* Space between navbar items */
+    align-items: center; /* Centers items vertically */
+    background-color: #154a66; /* Sets navbar background color */
+    padding: 15px 20px; /* Adds padding to the navbar */
+}
+
+.navbar a {
+    color: white; /* Sets link color */
+    text-decoration: none; /* Removes underline from links */
+    padding: 10px 15px; /* Adds padding to links */
+    transition: background 0.3s; /* Adds transition effect for background */
+}
+
+.navbar a:hover {
+    width: 100px; /* Sets width on hover */
+    height: 50px; /* Sets height on hover */
+    background-color: WHITE; /* Changes background color on hover */
+    color: black; /* Changes text color on hover */
+    display: flex; /* Uses flexbox for layout */
+    justify-content: center; /* Centers text horizontally */
+    align-items: center; /* Centers text vertically */
+    border-radius: 10px; /* Rounds the corners */
+    transition: box-shadow 0.3s ease; /* Adds transition effect for box shadow */
+}
+
+.logo {
+    height: 80px; /* Sets logo height */
+}
+
+.header {
+    background-image: url(templates/3_enhanced.jpg); /* Sets background image */
+    background-color: rgb(171, 140, 120); /* Fallback background color */
+    background-size: cover; /* Ensures background image covers the area */
+    background-position: center; /* Centers the background image */
+    height: 80vh; /* Sets height to 80% of the viewport height */
+    display: flex; /* Uses flexbox for layout */
+    align-items: center; /* Centers items vertically */
+    justify-content: left; /* Aligns items to the left */
+    color: rgb(233, 218, 213); /* Sets text color */
+    text-shadow: 2px 2px 4px black; /* Adds text shadow */
+    font-size: 3rem; /* Sets font size */
+    text-align: center; /* Centers text */
+    padding: 0 20px; /* Adds padding */
+    border-radius: 40px; /* Rounds the corners */
+}
+
+.paragraph p {
+    margin: 20px 0; /* Adds margin to paragraphs */
+}
+
+.home_body {
+    padding: 40px 20px; /* Adds padding */
+    text-align: center; /* Centers text */
+}
+
+.container {
+    display: grid; /* Uses grid layout */
+    grid-template-columns: auto auto; /* Defines two columns */
+    grid-template-rows: auto auto; /* Defines two rows */
+    grid-template-areas: "section_1 section_2"; /* Defines grid areas */
+    gap: 10px; /* Adds gap between grid items */
+    height: 10vh; /* Sets height */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+}
+
+.section_1 {
+    grid-area: section_1; /* Assigns grid area */
+    padding: 20px; /* Adds padding */
+    text-align: center; /* Centers text */
+}
+
+.section_2 {
+    grid-area: section_2; /* Assigns grid area */
+    padding: 20px; /* Adds padding */
+    text-align: center; /* Centers text */
+}
+
+.upload-container {
+    padding: 40px; /* Adds padding */
+    border-radius: 10px; /* Rounds the corners */
+    text-align: center; /* Centers text */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    border: 2px dashed white; /* Adds dashed border */
+    width: 180%; /* Sets width */
+    color: black; /* Sets text color */
+    font-family: Arial, sans-serif; /* Sets font family */
+}
+
+.upload-container h2 {
+    margin-bottom: 15px; /* Adds margin below heading */
+}
+
+.upload-container input {
+    display: none; /* Hides file input */
+}
+
+.upload-label {
+    display: inline-block; /* Displays as inline block */
+    padding: 10px 20px; /* Adds padding */
+    background-color: white; /* Sets background color */
+    color: #5E3BEE; /* Sets text color */
+    border-radius: 5px; /* Rounds the corners */
+    cursor: pointer; /* Changes cursor to pointer */
+    font-weight: bold; /* Sets font weight */
+}
+
+.privacy-badge {
+    background: white; /* Sets background color */
+    color: #5E3BEE; /* Sets text color */
+    padding: 5px 10px; /* Adds padding */
+    border-radius: 20px; /* Rounds the corners */
+    font-size: 12px; /* Sets font size */
+    position: absolute; /* Positions absolutely */
+    top: 10px; /* Positions from the top */
+    right: 10px; /* Positions from the right */
+    display: flex; /* Uses flexbox for layout */
+    align-items: center; /* Centers items vertically */
+    gap: 5px; /* Adds gap between items */
+}
+
+section {
+    padding: 60px 20px; /* Adds padding */
+    margin-top: 60px; /* Adds margin on top */
+    min-height: 100vh; /* Ensures minimum height */
+}
+
+h2 {
+    margin-top: 0; /* Removes top margin */
+}
+
+.contact p {
+    margin: 5px 0; /* Adds margin to paragraphs */
+}
+
+.container_5 {
+    display: grid; /* Uses grid layout */
+    grid-template-columns: auto auto; /* Defines two columns */
+    grid-template-rows: auto auto; /* Defines two rows */
+    grid-template-areas: "phone email" "social app"; /* Defines grid areas */
+    gap: 10px; /* Adds gap between grid items */
+    height: 10vh; /* Sets height */
+}
+
+.email {
+    grid-area: email; /* Assigns grid area */
+    padding: 20px; /* Adds padding */
+    text-align: center; /* Centers text */
+}
+
+.phone {
+    grid-area: phone; /* Assigns grid area */
+    padding: 20px; /* Adds padding */
+    text-align: center; /* Centers text */
+}
+
+.social {
+    grid-area: social; /* Assigns grid area */
+    padding: 20px; /* Adds padding */
+    text-align: center; /* Centers text */
+}
+
+.app {
+    grid-area: app; /* Assigns grid area */
+    padding: 20px; /* Adds padding */
+    text-align: center; /* Centers text */
+}
+
+a[href="https://www.facebook.com/login/"] {
+    color: rgba(109,124,128,255); /* Sets link color */
+    text-decoration: none; /* Removes underline */
+}
+
+a:hover {
+    color: blue; /* Changes link color on hover */
+}
+
+.portfolio {
+    padding: 80px 60px; /* Adds padding */
+    text-align: center; /* Centers text */
+    color: white; /* Sets text color */
+    background-color: #154a66; /* Sets background color */
+}
+
+.sign_up {
+    padding: 80px 60px; /* Adds padding */
+    text-align: center; /* Centers text */
+    color: white; /* Sets text color */
+    background-color: #154a66; /* Sets background color */
+}
+
+.button-container {
+    display: flex; /* Uses flexbox for layout */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+}
+
+.signup-button {
+    background-color: #fff; /* Sets background color */
+    color: #000; /* Sets text color */
+    border: none; /* Removes border */
+    border-radius: 25px; /* Rounds the corners */
+    padding: 10px 20px; /* Adds padding */
+    font-size: 16px; /* Sets font size */
+    cursor: pointer; /* Changes cursor to pointer */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds shadow */
+    transition: background-color 0.3s ease; /* Adds transition effect */
+}
+
+.signup-button:hover {
+    background-color: #f0f0f0; /* Changes background color on hover */
+}
+
+.candidate {
+    display: flex; /* Uses flexbox for layout */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Sets character encoding to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsive design -->
+    <title>Signup Page</title> <!-- Title of the webpage -->
+    <style>
+        body {
+            display: flex; /* Uses flexbox for centering content */
+            justify-content: center; /* Centers content horizontally */
+            align-items: center; /* Centers content vertically */
+            height: 100vh; /* Sets height to full viewport height */
+            margin: 0; /* Removes default margin */
+            font-family: 'Arial', sans-serif; /* Sets font for the body */
+            background: linear-gradient(to right, #8360c3, #2ebf91); /* Applies a gradient background */
+        }
+
+        .signup-container {
+            display: flex; /* Uses flexbox for layout */
+            justify-content: center; /* Centers content horizontally */
+            align-items: center; /* Centers content vertically */
+            width: 100%; /* Sets width to full */
+            height: 100%; /* Sets height to full */
+        }
+
+        .form-box {
+            background: #fff; /* Sets background color for the form box */
+            padding: 40px; /* Adds padding */
+            border-radius: 10px; /* Rounds the corners */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Adds shadow effect */
+            text-align: center; /* Centers text */
+        }
+
+        .form-box h2 {
+            margin-bottom: 20px; /* Adds margin below heading */
+            color: #333; /* Sets heading color */
+        }
+
+        .input-group {
+            position: relative; /* Positions input group relative to its container */
+            margin-bottom: 30px; /* Adds margin below input group */
+        }
+
+        .input-group input {
+            width: 100%; /* Sets input width to full */
+            padding: 10px; /* Adds padding */
+            background: #f0f0f0; /* Sets background color */
+            border: none; /* Removes border */
+            border-radius: 5px; /* Rounds the corners */
+            outline: none; /* Removes outline */
+            transition: background 0.3s ease; /* Adds transition effect for background */
+        }
+
+        .input-group label {
+            position: absolute; /* Positions label absolutely */
+            top: 50%; /* Centers label vertically */
+            left: 10px; /* Positions label from the left */
+            transform: translateY(-50%); /* Adjusts label position */
+            color: #aaa; /* Sets label color */
+            pointer-events: none; /* Prevents label from capturing mouse events */
+            transition: all 0.3s ease; /* Adds transition effect for label */
+        }
+
+        .input-group input:focus {
+            background: #e0e0e0; /* Changes background color on focus */
+        }
+
+        .input-group input:focus + label,
+        .input-group input:valid + label {
+            top: 0; /* Moves label up when input is focused or valid */
+            font-size: 12px; /* Reduces label font size */
+            color: #666; /* Changes label color */
+        }
+
+        .signup-button {
+            background: #2ebf91; /* Sets background color for the button */
+            color: #fff; /* Sets text color for the button */
+            padding: 10px 20px; /* Adds padding */
+            border: none; /* Removes border */
+            border-radius: 5px; /* Rounds the corners */
+            cursor: pointer; /* Changes cursor to pointer */
+            transition: background 0.3s ease; /* Adds transition effect for background */
+        }
+
+        .signup-button:hover {
+            background: #279a78; /* Changes background color on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <div class="form-box">
+            <h2>Sign Up</h2> <!-- Heading for the signup form -->
+            <form>
+                <div class="input-group">
+                    <input type="text" required> <!-- Input for username -->
+                    <label>Username</label> <!-- Label for username input -->
+                </div>
+                <div class="input-group">
+                    <input type="email" required> <!-- Input for email -->
+                    <label>Email</label> <!-- Label for email input -->
+                </div>
+                <div class="input-group">
+                    <input type="password" required> <!-- Input for password -->
+                    <label>Password</label> <!-- Label for password input -->
+                </div>
+                <div class="input-group">
+                    <input type="tel" required> <!-- Input for phone number -->
+                    <label>Phone</label> <!-- Label for phone input -->
+                </div>
+                <div class="input-group">
+                    <input type="text" required> <!-- Input for job position -->
+                    <label>Job Position</label> <!-- Label for job position input -->
+                </div>
+                <div class="input-group">
+                    <textarea required></textarea> <!-- Textarea for job description -->
+                    <label>Job Description</label> <!-- Label for job description textarea -->
+                </div>
+                <a href="_done.html" class="active"><input type="button" class="signup-button" value="Sign up"></a> <!-- Sign up button -->
+            </form>
+        </div>
+    </div>
+</body>
+</html>
