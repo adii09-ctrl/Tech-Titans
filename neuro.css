@@ -253,23 +253,16 @@ a[href="https://www.instagram.com/accounts/login/"]
 }
 
 
-a[href="https://in.pinterest.com/login/"]
-{
-    color:rgba(109,124,128,255);
-    text-decoration:none;
-}
-
-
 a[href="https://play.google.com/store/apps?hl=es_419"]
 {
-    color:rgb(57, 57, 57);
+    color:rgb(37, 37, 37);
     text-decoration:none;
 }
 
 
-a[href="https://www.apple.com/in/app-store/"]
+a[href="https://www.canva.com/resumes/templates/"]
 {
-    color:rgb(57, 57, 57);
+    color:rgb(37, 37, 37);
     text-decoration:none;
 }
 
@@ -277,3 +270,46 @@ a[href="https://www.apple.com/in/app-store/"]
 a:hover{
     color: blue;
 }
+
+
+.portfolio{
+    padding: 80px 60px;
+    text-align: center;
+    color: white;
+    background-color: #154a66;
+}
+
+
+.sign_up {
+    padding: 80px 60px;
+    text-align: center;
+    color: white;
+    background-color: #154a66;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+.signup-button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+
+.signup-button:hover {
+    background-color: #f0f0f0
+}
+
